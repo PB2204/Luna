@@ -1,2 +1,2 @@
 # core
-SimpMusic app's core modules
+Luna Music app's core modules

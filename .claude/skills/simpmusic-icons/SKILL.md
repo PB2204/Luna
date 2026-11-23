@@ -1,11 +1,11 @@
 ---
-name: simpmusic-icons
-description: Add or change an icon in SimpMusic. Every icon is a generated Material Symbols ImageVector under ui/icon, addressed as SimpIcons.<Name> — there is no material-icons dependency and no XML icon drawable. Use when adding a new icon, replacing one, or hitting ImageVector/Painter type errors.
+name: luna-icons
+description: Add or change an icon in Luna Music. Every icon is a generated Material Symbols ImageVector under ui/icon, addressed as SimpIcons.<Name> — there is no material-icons dependency and no XML icon drawable. Use when adding a new icon, replacing one, or hitting ImageVector/Painter type errors.
 ---
 
-# SimpMusic Icons
+# Luna Music Icons
 
-Icons live in `composeApp/src/commonMain/kotlin/com/maxrave/simpmusic/ui/icon/`, one file per
+Icons live in `composeApp/src/commonMain/kotlin/com/maxrave/luna/ui/icon/`, one file per
 icon, each declaring `val SimpIcons.<Name>: ImageVector`.
 
 Two things are deliberately absent and must not come back:
@@ -31,7 +31,7 @@ the on state and the distinction is lost.
 
 Then edit the downloaded file:
 
-1. `package com.example.test` → `package com.maxrave.simpmusic.ui.icon`
+1. `package com.example.test` → `package com.luna.music.ui.icon`
 2. `public val <symbol_name>: ImageVector` → `val SimpIcons.<PascalName>: ImageVector`
 3. Rename the backing field `_<symbol_name>` → `_<PascalName>`, and `name = "<symbol_name>"` → `"<PascalName>"`
 4. Never add `autoMirror = true` to `ImageVector.Builder(...)`: in right-to-left languages only text
@@ -44,8 +44,8 @@ Then edit the downloaded file:
 ## Using an icon
 
 ```kotlin
-import com.maxrave.simpmusic.ui.icon.PlayArrow   // per-icon import, required
-import com.maxrave.simpmusic.ui.icon.SimpIcons
+import com.luna.music.ui.icon.PlayArrow   // per-icon import, required
+import com.luna.music.ui.icon.SimpIcons
 
 Icon(SimpIcons.PlayArrow, contentDescription = null)
 ```
@@ -77,7 +77,7 @@ compile errors in one pass: it also hit `Painter` parameters, and it landed *ins
 |---|---|
 | `baseline_downloaded.xml` | `#FF00A0CB` — the blue *is* the "downloaded" state |
 | `baseline_favorite_24.xml` | `#D10000` — the red *is* the "liked" state |
-| `mono.xml`, `monochrome.xml` | SimpMusic logos (`#0AEAF8` / black) |
+| `mono.xml`, `monochrome.xml` | Luna Music logos (`#0AEAF8` / black) |
 | `app_icon.png`, `circle_app_icon.png`, `holder*.png` | bitmaps, not icons |
 
 If a state needs that colour with a shared symbol, pass it explicitly — e.g. `ActionButton`'s

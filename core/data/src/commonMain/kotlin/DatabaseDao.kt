@@ -7,50 +7,50 @@ import androidx.room.RawQuery
 import androidx.room.RoomRawQuery
 import androidx.room.Transaction
 import androidx.room.Update
-import com.maxrave.domain.data.entities.AlbumEntity
-import com.maxrave.domain.data.entities.ArtistEntity
-import com.maxrave.domain.data.entities.ArtistMotionEntity
-import com.maxrave.domain.data.entities.AutoEqCurveEntity
-import com.maxrave.domain.data.entities.AutoEqEntryEntity
-import com.maxrave.domain.data.entities.AutoEqIndexMetaEntity
-import com.maxrave.domain.data.entities.EpisodeEntity
-import com.maxrave.domain.data.entities.FollowedArtistSingleAndAlbum
-import com.maxrave.domain.data.entities.GoogleAccountEntity
-import com.maxrave.domain.data.entities.LocalPlaylistEntity
-import com.maxrave.domain.data.entities.LyricsEntity
-import com.maxrave.domain.data.entities.NewFormatEntity
-import com.maxrave.domain.data.entities.NotificationEntity
-import com.maxrave.domain.data.entities.PairSongLocalPlaylist
-import com.maxrave.domain.data.entities.PlaylistEntity
-import com.maxrave.domain.data.entities.PodcastWithEpisodes
-import com.maxrave.domain.data.entities.PodcastsEntity
-import com.maxrave.domain.data.entities.QueueEntity
-import com.maxrave.domain.data.entities.SearchHistory
-import com.maxrave.domain.data.entities.SetVideoIdEntity
-import com.maxrave.domain.data.entities.SongEntity
-import com.maxrave.domain.data.entities.SongInfoEntity
-import com.maxrave.domain.data.entities.TranslatedLyricsEntity
-import com.maxrave.domain.data.entities.YourYouTubePlaylistList
-import com.maxrave.domain.data.entities.analytics.EventArtistEntity
-import com.maxrave.domain.data.entities.analytics.PlaybackEventEntity
-import com.maxrave.domain.data.entities.analytics.query.DecadeCount
-import com.maxrave.domain.data.entities.analytics.query.PlaybackSample
-import com.maxrave.domain.data.entities.analytics.query.SongPlaySample
-import com.maxrave.domain.data.entities.analytics.query.TopPlayedAlbum
-import com.maxrave.domain.data.entities.analytics.query.TopPlayedArtist
-import com.maxrave.domain.data.entities.analytics.query.TopPlayedArtistTime
-import com.maxrave.domain.data.entities.analytics.query.TopPlayedTracks
-import com.maxrave.domain.data.type.PlaylistType
-import com.maxrave.domain.data.type.RecentlyType
-import com.maxrave.domain.extension.now
-import com.maxrave.domain.utils.LIVE_RESULT_TYPE
+import com.luna.domain.data.entities.AlbumEntity
+import com.luna.domain.data.entities.ArtistEntity
+import com.luna.domain.data.entities.ArtistMotionEntity
+import com.luna.domain.data.entities.AutoEqCurveEntity
+import com.luna.domain.data.entities.AutoEqEntryEntity
+import com.luna.domain.data.entities.AutoEqIndexMetaEntity
+import com.luna.domain.data.entities.EpisodeEntity
+import com.luna.domain.data.entities.FollowedArtistSingleAndAlbum
+import com.luna.domain.data.entities.GoogleAccountEntity
+import com.luna.domain.data.entities.LocalPlaylistEntity
+import com.luna.domain.data.entities.LyricsEntity
+import com.luna.domain.data.entities.NewFormatEntity
+import com.luna.domain.data.entities.NotificationEntity
+import com.luna.domain.data.entities.PairSongLocalPlaylist
+import com.luna.domain.data.entities.PlaylistEntity
+import com.luna.domain.data.entities.PodcastWithEpisodes
+import com.luna.domain.data.entities.PodcastsEntity
+import com.luna.domain.data.entities.QueueEntity
+import com.luna.domain.data.entities.SearchHistory
+import com.luna.domain.data.entities.SetVideoIdEntity
+import com.luna.domain.data.entities.SongEntity
+import com.luna.domain.data.entities.SongInfoEntity
+import com.luna.domain.data.entities.TranslatedLyricsEntity
+import com.luna.domain.data.entities.YourYouTubePlaylistList
+import com.luna.domain.data.entities.analytics.EventArtistEntity
+import com.luna.domain.data.entities.analytics.PlaybackEventEntity
+import com.luna.domain.data.entities.analytics.query.DecadeCount
+import com.luna.domain.data.entities.analytics.query.PlaybackSample
+import com.luna.domain.data.entities.analytics.query.SongPlaySample
+import com.luna.domain.data.entities.analytics.query.TopPlayedAlbum
+import com.luna.domain.data.entities.analytics.query.TopPlayedArtist
+import com.luna.domain.data.entities.analytics.query.TopPlayedArtistTime
+import com.luna.domain.data.entities.analytics.query.TopPlayedTracks
+import com.luna.domain.data.type.PlaylistType
+import com.luna.domain.data.type.RecentlyType
+import com.luna.domain.extension.now
+import com.luna.domain.utils.LIVE_RESULT_TYPE
 import kotlinx.coroutines.flow.Flow
 import kotlinx.datetime.LocalDateTime
 
 /**
  * The album name older builds stored when they could not find a real one.
  *
- * Kept in step with the copy in [com.maxrave.data.db.datasource.LocalDataSource] and with the
+ * Kept in step with the copy in [com.luna.data.db.datasource.LocalDataSource] and with the
  * literal baked into [DatabaseDao.refreshAlbumIfPlaceholder]'s WHERE clause.
  */
 private const val PLACEHOLDER_ALBUM_NAME = "Album"
@@ -277,7 +277,7 @@ interface DatabaseDao {
      * Stores a batch of tracks in one transaction.
      *
      * Every other path inserts one song at a time through
-     * [com.maxrave.data.db.datasource.LocalDataSource.insertSong], which is right when a track
+     * [com.luna.data.db.datasource.LocalDataSource.insertSong], which is right when a track
      * arrives on its own but costs a commit each time. An import writes thousands in a row, so the
      * batch collapses them into a handful of commits instead.
      *

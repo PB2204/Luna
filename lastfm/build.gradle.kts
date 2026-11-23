@@ -9,7 +9,7 @@ plugins {
 
 kotlin {
     android {
-        namespace = "org.simpmusic.lastfm"
+        namespace = "com.luna.lastfm"
         compileSdk = 37
         minSdk = 26
     }

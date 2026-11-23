@@ -35,6 +35,7 @@ plugins {
 // Force it to `always` so `Res` is generated for this app module.
 compose.resources {
     generateResClass = always
+    packageOfResClass = "luna.composeapp.generated.resources"
 }
 
 kotlin {
@@ -45,7 +46,7 @@ kotlin {
         freeCompilerArgs.add("-Xexpect-actual-classes")
     }
     android {
-        namespace = "com.maxrave.simpmusic.composeapp"
+        namespace = "com.luna.music.composeapp"
         compileSdk = 37
         minSdk = 26
         withJava()
@@ -652,7 +653,7 @@ val mpvSetupLinuxCi by tasks.registering {
             return@doLast
         }
 
-        val tag = "simpmusic-libmpv:$mpvVersion"
+        val tag = "luna-libmpv:$mpvVersion"
         logger.lifecycle("[mpv-multi] Building $tag (libplacebo + FFmpeg + mpv from source, ~20-40 min cold)")
         runChecked("docker", "build", "-t", tag, dockerDir.absolutePath)
 
@@ -705,9 +706,9 @@ val mpvSetupLinuxCi by tasks.registering {
 // only downloads and unpacks them: no toolchain, no host requirements, same shape as the old
 // vlcSetupAll.
 // ===========================================================================
-// Kept in a repo of its own rather than SimpMusic's own releases: these archives are ~196 MB per
+// Kept in a repo of its own rather than Luna Music's own releases: these archives are ~196 MB per
 // mpv bump and would otherwise sit in the release list users browse for the app itself.
-val mpvNativesRepo = "maxrave-dev/simpmusic-files"
+val mpvNativesRepo = "luna-music/luna-files"
 val mpvNativesTag = "abc"
 val mpvSlices = listOf("linux-x64", "macos-arm64", "macos-x64", "windows-x64", "windows-arm64")
 
@@ -831,7 +832,7 @@ val mpvSetupAll by tasks.registering {
 }
 
 buildkonfig {
-    packageName = "com.maxrave.simpmusic"
+    packageName = "com.luna.music"
     exposeObjectWithName = "BuildKonfig"
     defaultConfigs {
         val versionName =

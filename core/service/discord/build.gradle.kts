@@ -9,7 +9,7 @@ plugins {
 
 kotlin {
     android {
-        namespace = "org.simpmusic.discord"
+        namespace = "com.luna.discord"
         compileSdk = 37
         minSdk = 26
     }
