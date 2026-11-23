@@ -121,7 +121,7 @@
     <string name="about_us">关于我们</string>
     <string name="version">版本</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">luna-music</string>
+    <string name="maxrave_dev">Pabitra Banerjee</string>
     <string name="buy_me_a_coffee">请我喝杯咖啡（捐赠）</string>
     <string name="developer_blog">开发者博客</string>
     <string name="developer_blog_tagline">阅读开发日志、教程及幕后花絮</string>
@@ -277,7 +277,7 @@
     <string name="older_first">较早的优先</string>
     <string name="newer_first">较新的在前</string>
     <string name="added_date">已添加日期</string>
-    <string name="credit_app">使用 YouTube Music 作为后端的简单音乐应用 \n\nLuna Music 是一个开源项目，可以在没有广告和跟踪的情况下从 YouTube 和 YouTube Music 中流式播放音乐。Luna Music 提供许多功能：\n\n - 流媒体音乐 \n - 同步歌词 \n - 个性化数据 \n -等等… \n\nLuna Music始终是免费的，没有广告\n\n Luna Team(Maxrave-dev) 用 ❤️ 构建</string>
+    <string name="credit_app">使用 YouTube Music 作为后端的简单音乐应用 \n\nLuna Music 是一个开源项目，可以在没有广告和跟踪的情况下从 YouTube 和 YouTube Music 中流式播放音乐。Luna Music 提供许多功能：\n\n - 流媒体音乐 \n - 同步歌词 \n - 个性化数据 \n -等等… \n\nLuna Music始终是免费的，没有广告\n\n Pabitra Banerjee 用 ❤️ 构建</string>
     <string name="issue_tracker">问题跟踪</string>
     <string name="featured_playlists">精选歌单</string>
     <string name="featured_inArtist">精选开启</string>
@@ -571,6 +571,6 @@
     <string name="import_result">已创建 %1$d 播放列表并导入了 %2$d 首歌曲。</string>
     <string name="import_result_skipped">已跳过 %1$d 条目，因为文件中缺少相应的歌曲。</string>
     <string name="import_failed">导入失败</string>
-    <string name="import_invalid_file">此文件不是一个有效的 Luna Music 导入文件。请先在luna-music.app转换您的库。</string>
+    <string name="import_invalid_file">此文件不是一个有效的 Luna Music 导入文件。请先在luna-music-app.web.app转换您的库。</string>
     <!-- Listen Together -->
 </resources>

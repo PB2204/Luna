@@ -43,7 +43,7 @@ fun ReviewDialog(
         confirmButton = {
             TextButton(onClick = {
                 onDoneReview.invoke()
-                uriHandler.openUri("https://github.com/luna-music/Luna Music")
+                uriHandler.openUri("https://github.com/PB2204/Luna")
             }) {
                 Text(
                     stringResource(Res.string.give_a_star),
@@ -93,12 +93,12 @@ fun ReviewDialog(
                         append(stringResource(Res.string.if_you_love_my_work_consider).removeSurrounding("\"").trimEnd() + " ")
                         withLink(
                             LinkAnnotation.Url(
-                                "https://buymeacoffee.com/maxrave",
+                                "https://github.com/sponsors/PB2204",
                                 TextLinkStyles(style = SpanStyle(textDecoration = TextDecoration.Underline, color = seed)),
                             ) {
                                 onDoneReview.invoke()
                                 onDismissRequest.invoke()
-                                uriHandler.openUri("https://buymeacoffee.com/maxrave")
+                                uriHandler.openUri("https://github.com/sponsors/PB2204")
                             },
                         ) {
                             append(stringResource(Res.string.buying_me_a_coffee))
@@ -106,16 +106,15 @@ fun ReviewDialog(
                         append("\n")
                         withLink(
                             LinkAnnotation.Url(
-                                "https://x.com/maxrave_dev",
+                                "https://www.linkedin.com/in/pabitra-banerjee",
                                 TextLinkStyles(style = SpanStyle(textDecoration = TextDecoration.Underline, color = seed)),
                             ) {
                                 onDoneReview.invoke()
                                 onDismissRequest.invoke()
-                                // openUrl rather than the uri handler, which throws where no browser answers.
-                                runCatching { openUrl("https://x.com/maxrave_dev") }
+                                runCatching { openUrl("https://www.linkedin.com/in/pabitra-banerjee") }
                             },
                         ) {
-                            append(stringResource(Res.string.follow_me_on_x))
+                            append(stringResource(Res.string.linkedin))
                         }
                     },
                     textAlign = TextAlign.Center,

@@ -121,7 +121,7 @@
     <string name="about_us">정보</string>
     <string name="version">버전</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">luna-music</string>
+    <string name="maxrave_dev">Pabitra Banerjee</string>
     <string name="buy_me_a_coffee">Buy me a coffee</string>
     <string name="developer_blog">개발자 블로그</string>
     <string name="developer_blog_tagline">개발 노트, 튜토리얼 &amp; 비하인드 스토리를 읽어보세요</string>
@@ -277,7 +277,7 @@
     <string name="older_first">날짜순</string>
     <string name="newer_first">최신순</string>
     <string name="added_date">추가한 날짜</string>
-    <string name="credit_app">YouTube Music을 백엔드로 사용하는 간단한 음악 앱 \n\nLuna Music은 광고나 추적 없이 YouTube나 YouTube Music에서 음악을 스트리밍하는 오픈 소스 프로젝트입니다. Luna Music에서는 다양한 기능들을 이용할 수 있습니다.\n\n - 음악 스트리밍 \n - 가사 싱크\n - 데이터 개인화\n - 기타… \n\nLuna Music은 항상 무료이며 광고도 없습니다\n\nLuna Team (luna-music)가 ❤️을 담아 만듦</string>
+    <string name="credit_app">YouTube Music을 백엔드로 사용하는 간단한 음악 앱 \n\nLuna Music은 광고나 추적 없이 YouTube나 YouTube Music에서 음악을 스트리밍하는 오픈 소스 프로젝트입니다. Luna Music에서는 다양한 기능들을 이용할 수 있습니다.\n\n - 음악 스트리밍 \n - 가사 싱크\n - 데이터 개인화\n - 기타… \n\nLuna Music은 항상 무료이며 광고도 없습니다\n\nPabitra Banerjee가 ❤️을 담아 만듦</string>
     <string name="issue_tracker">이슈 트래커</string>
     <string name="featured_playlists">추천 재생목록</string>
     <string name="featured_inArtist">추천</string>
@@ -598,7 +598,7 @@
     <string name="import_result">%1$d개의 재생 목록을 만들고 %2$d곡을 가져왔습니다.</string>
     <string name="import_result_skipped">파일에 노래가 없어 %1$d개의 항목을 건너뛰었습니다.</string>
     <string name="import_failed">가져오기</string>
-    <string name="import_invalid_file">이 파일은 유효한 Luna Music 가져오기 파일이 아닙니다. 먼저 luna-music.app에서 라이브러리를 변환하십시오.</string>
+    <string name="import_invalid_file">이 파일은 유효한 Luna Music 가져오기 파일이 아닙니다. 먼저 luna-music-app.web.app에서 라이브러리를 변환하십시오.</string>
     <string name="select_all">전체선택</string>
     <string name="n_selected">선택됨</string>
     <string name="n_songs_selected">곡 선택됨</string>

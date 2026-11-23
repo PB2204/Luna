@@ -138,14 +138,16 @@
     <string name="restore_your_saved_data">Restore your saved data</string>
     <string name="about_us">About us</string>
     <string name="version">Version</string>
-    <string name="github">Github</string>
-    <string name="maxrave_dev">luna-music</string>
+    <string name="github">GitHub</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="facebook">Facebook</string>
+    <string name="maxrave_dev">Pabitra Banerjee</string>
     <string name="follow_me_on_x">Follow me on X</string>
     <string name="buy_me_a_coffee">Buy me a coffee</string>
     <string name="developer_blog">Developer Blog</string>
     <string name="developer_blog_tagline">Read dev notes, tutorials &amp; behind-the-scenes</string>
     <string name="blog_promo_title">Something new from the dev</string>
-    <string name="blog_promo_message">I just launched the Luna Music blog at luna-music.app — sharing the story behind Luna Music, music-tech deep dives, and engineering notes. Give it a read if you're curious ✨</string>
+    <string name="blog_promo_message">I just launched the Luna Music blog at luna-music-app.web.app — sharing the story behind Luna Music, music-tech deep dives, and engineering notes. Give it a read if you're curious ✨</string>
     <string name="visit_blog">Visit blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Title</string>
@@ -306,9 +308,9 @@
     <string name="older_first">Older First</string>
     <string name="newer_first">Newer First</string>
     <string name="added_date">Added date</string>
-    <string name="credit_app">A simple music app using YouTube Music for backend \n\nLuna Music is an open source project to stream music from YouTube and YouTube Music without ads and tracking. Luna Music provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nLuna Music is always free and no ads\n\nBuild with ❤️ from Luna Team (luna-music)</string>
+    <string name="credit_app">A simple music app using YouTube Music for backend \n\nLuna Music is an open source project to stream music from YouTube and YouTube Music without ads and tracking. Luna Music provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nLuna Music is always free and no ads\n\nBuild with ❤️ from Pabitra Banerjee</string>
     <string name="issue_tracker">Issue Tracker</string>
-    <string name="copyright" translatable="false">©2023-%1$s Luna Team (luna-music)</string>
+    <string name="copyright" translatable="false">©2023-%1$s Pabitra Banerjee</string>
     <string name="featured_playlists">Featured Playlists</string>
     <string name="podcasts" translatable="false">Podcasts</string>
     <string name="featured_inArtist">Featured on</string>
@@ -789,13 +791,13 @@
     <string name="audio_output_hdmi">HDMI</string>
     <string name="import_data">Import playlists</string>
     <string name="import_playlists_from_other_apps">Import playlists from another app</string>
-    <string name="import_data_intro">Import brings in playlists converted from Spotify or another YT Music client app.\nConverting tool: https://www.luna-music.app/tools\nIn Luna Music, only playlist files in our own format can be imported</string>
+    <string name="import_data_intro">Import brings in playlists converted from Spotify or another YT Music client app.\nConverting tool: https://www.luna-music-app.web.app/tools\nIn Luna Music, only playlist files in our own format can be imported</string>
     <string name="import_reading_file">Reading file…</string>
     <string name="import_progress_songs">%1$d of %2$d songs</string>
     <string name="import_result">Created %1$d playlists and imported %2$d songs.</string>
     <string name="import_result_skipped">%1$d entries were skipped because their song was missing from the file.</string>
     <string name="import_failed">Import failed</string>
-    <string name="import_invalid_file">This file is not a valid Luna Music import file. Convert your library at luna-music.app first.</string>
+    <string name="import_invalid_file">This file is not a valid Luna Music import file. Convert your library at luna-music-app.web.app first.</string>
     <string name="analytics">Analytics</string>
     <string name="select_all">Select all</string>
     <string name="n_selected">%1$d selected</string>
@@ -1023,7 +1025,7 @@
     <string name="library_sync_logins_waiting">Waiting for %1$s to accept. Confirm on the computer.</string>
     <string name="library_sync_logins_declined">%1$s didn't accept the sign-ins.</string>
     <string name="modified_build_title">Unofficial app</string>
-    <string name="modified_build_message">You are using an unofficial copy of Luna Music that was modified or repackaged by someone else. It cannot be used. Download the official version from luna-music.app.</string>
+    <string name="modified_build_message">You are using an unofficial copy of Luna Music that was modified or repackaged by someone else. It cannot be used. Download the official version from luna-music-app.web.app.</string>
     <string name="taste_title">What's your music taste?</string>
     <string name="taste_invite">Let AI read the last 12 months of your listening and tell you.</string>
     <string name="taste_loading_title">Reading your music taste…</string>

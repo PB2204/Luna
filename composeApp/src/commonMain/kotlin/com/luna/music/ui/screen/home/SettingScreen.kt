@@ -378,6 +378,9 @@ import luna.composeapp.generated.resources.lyrics_style_classic
 import luna.composeapp.generated.resources.main_lyrics_provider
 import luna.composeapp.generated.resources.manage_your_youtube_accounts
 import luna.composeapp.generated.resources.maxrave_dev
+import luna.composeapp.generated.resources.linkedin
+import luna.composeapp.generated.resources.facebook
+import luna.composeapp.generated.resources.website
 import luna.composeapp.generated.resources.monthly
 import luna.composeapp.generated.resources.never
 import luna.composeapp.generated.resources.no_account
@@ -2844,35 +2847,35 @@ fun SettingScreen(
                     title = stringResource(Res.string.author),
                     subtitle = stringResource(Res.string.maxrave_dev),
                     onClick = {
-                        uriHandler.openUri("https://github.com/luna-music")
+                        uriHandler.openUri("https://github.com/PB2204/Luna")
                     },
                 )
                 SettingItem(
-                    title = stringResource(Res.string.follow_me_on_x),
-                    subtitle = "@maxrave_dev",
+                    title = stringResource(Res.string.linkedin),
+                    subtitle = "Pabitra Banerjee",
                     onClick = {
-                        uriHandler.openUri("https://x.com/maxrave_dev")
+                        uriHandler.openUri("https://www.linkedin.com/in/pabitra-banerjee")
                     },
                 )
                 SettingItem(
-                    title = stringResource(Res.string.developer_blog),
-                    subtitle = stringResource(Res.string.developer_blog_tagline),
+                    title = stringResource(Res.string.facebook),
+                    subtitle = "Comrade Pabitra Banerjee",
                     onClick = {
-                        uriHandler.openUri("https://www.luna-music.app/blogs")
+                        uriHandler.openUri("https://www.facebook.com/Comrade.Pabitra.Banerjee")
                     },
                 )
-                if (getPlatform() == Platform.Android) {
-                    SettingItem(
-                        title = stringResource(Res.string.blog_notification_title),
-                        subtitle = stringResource(Res.string.blog_notification_description),
-                        switch = (blogNotificationEnabled to { viewModel.setBlogNotificationEnabled(it) }),
-                    )
-                }
+                SettingItem(
+                    title = stringResource(Res.string.website),
+                    subtitle = "luna-music-app.web.app",
+                    onClick = {
+                        uriHandler.openUri("https://luna-music-app.web.app")
+                    },
+                )
                 SettingItem(
                     title = stringResource(Res.string.buy_me_a_coffee),
                     subtitle = stringResource(Res.string.donation),
                     onClick = {
-                        uriHandler.openUri("https://github.com/sponsors/luna-music")
+                        uriHandler.openUri("https://github.com/sponsors/PB2204")
                     },
                 )
                 SettingItem(

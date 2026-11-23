@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Music — The Modern FOSS Music Streaming Client</title>
+  <meta name="description" content="Luna Music is a free, open-source YouTube Music client for Android and Desktop with synced lyrics, background playback, Spotify Canvas, and audio enhancements.">
+  <meta name="keywords" content="Luna Music, Luna, YouTube Music client, FOSS music player, Compose Multiplatform, synced lyrics, ad-free music, Pabitra Banerjee">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luna Music — Experience Music Without Limits">
+  <meta property="og:description" content="A powerful, private, free & open-source music streaming client by Pabitra Banerjee.">
+  <meta property="og:image" content="assets/banner.png">
+  <meta property="og:url" content="https://luna-music-app.web.app">
+  <meta name="theme-color" content="#6366f1">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="Luna Music Logo" class="brand-icon">
+        <span>Luna Music</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#developer">Developer</a></li>
+        <li><a href="https://github.com/PB2204/Luna" target="_blank" class="btn btn-secondary">⭐ Star on GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="badge">✨ Free, Ad-Free &amp; Open Source</div>
+      <h1>Feel the Rhythm of the Night with <span class="gradient-text">Luna Music</span></h1>
+      <p class="hero-subtitle">
+        An elegant, privacy-first YouTube Music streaming client built with Compose Multiplatform. Enjoy background playback, synced word-by-word lyrics, Spotify Canvas, and studio equalizer on Android, Windows, macOS, and Linux.
+      </p>
+      <div class="hero-cta">
+        <a href="#downloads" class="btn btn-primary">🚀 Download Luna Music</a>
+        <a href="https://github.com/PB2204/Luna" target="_blank" class="btn btn-secondary">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Source Code
+        </a>
+      </div>
+      <div class="hero-showcase">
+        <img src="assets/banner.png" alt="Luna Music App Banner">
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Grid -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Unmatched Streaming Experience</h2>
+        <p>Built from the ground up for true music lovers with no compromises.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌙</div>
+          <h3>Pure &amp; Zero Ads</h3>
+          <p>Stream endless audio and video from YouTube &amp; YouTube Music completely free without sponsor segments or advertisements.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎤</div>
+          <h3>Synced Word-by-Word Lyrics</h3>
+          <p>Sing along with real-time Apple Music-style synced lyrics powered by Luna Lyrics, LRCLIB, and BetterLyrics with custom timing adjustments.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Spotify Canvas &amp; Dynamic UI</h3>
+          <p>Immerse yourself in looping Spotify Canvas video backgrounds, animated album covers, and the Material 3 Expressive liquid glass theme.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎛️</div>
+          <h3>Audiophile 10-Band EQ</h3>
+          <p>Fine-tune every frequency with AutoEq headphone correction presets, spatial reverb, and high-bitrate Opus &amp; AAC audio streaming.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📥</div>
+          <h3>Smart Offline Downloads</h3>
+          <p>Take your library anywhere. Smart caching automatically downloads your most-played songs so you never miss a beat offline.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Listen Together &amp; Discord RPC</h3>
+          <p>Create synchronized listening rooms with your friends in real-time, and show off what you're vibing to with Discord Rich Presence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Gallery -->
+  <section id="screenshots" class="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <h2>Designed for Modern Aesthetics</h2>
+        <p>A refined user interface crafted for immersion and fluid responsiveness.</p>
+      </div>
+      <div class="screenshots-row">
+        <img src="assets/screen_1.jpg" alt="Now Playing Screen">
+        <img src="assets/screen_2.jpg" alt="Home & Recommendation">
+        <img src="assets/screen_3.jpg" alt="Synced Lyrics View">
+        <img src="assets/screen_4.jpg" alt="Audio Equalizer & Settings">
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="downloads">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get Luna Music</h2>
+        <p>Choose your platform and elevate your music experience today.</p>
+      </div>
+      <div class="download-grid">
+        <!-- Android -->
+        <div class="download-card">
+          <div>
+            <div class="platform-icon">🤖</div>
+            <h3>Android</h3>
+            <p>Android 8.0 (Oreo) and newer. Supports phone, tablet, and Android Auto.</p>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/PB2204/Luna/releases/latest" target="_blank" class="btn btn-primary">Download APK</a>
+            <a href="https://apt.izzysoft.de/packages/com.luna.music/" target="_blank" class="btn btn-secondary">IzzyOnDroid</a>
+            <a href="https://f-droid.org/en/packages/com.luna.music/" target="_blank" class="btn btn-secondary">F-Droid</a>
+          </div>
+        </div>
+
+        <!-- Windows -->
+        <div class="download-card">
+          <div>
+            <div class="platform-icon">🪟</div>
+            <h3>Windows</h3>
+            <p>Windows 10 &amp; 11 (64-bit). Full background playback &amp; media controls.</p>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/PB2204/Luna/releases/latest" target="_blank" class="btn btn-primary">Installer (.msix / .exe)</a>
+            <a href="https://github.com/PB2204/Luna/releases/latest" target="_blank" class="btn btn-secondary">Portable ZIP</a>
+          </div>
+        </div>
+
+        <!-- macOS -->
+        <div class="download-card">
+          <div>
+            <div class="platform-icon">🍎</div>
+            <h3>macOS</h3>
+            <p>macOS 12.0+ Monterey or newer. Native Apple Silicon (M1/M2/M3) &amp; Intel.</p>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/PB2204/Luna/releases/latest" target="_blank" class="btn btn-primary">Download DMG</a>
+          </div>
+        </div>
+
+        <!-- Linux -->
+        <div class="download-card">
+          <div>
+            <div class="platform-icon">🐧</div>
+            <h3>Linux</h3>
+            <p>Universal standalone AppImage compatible with all major Linux distributions.</p>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/PB2204/Luna/releases/latest" target="_blank" class="btn btn-primary">Download AppImage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Spotlight -->
+  <section id="developer" class="developer">
+    <div class="container">
+      <div class="dev-card">
+        <img src="assets/logo.png" alt="Pabitra Banerjee Avatar" class="dev-avatar">
+        <div class="dev-info">
+          <h3>Pabitra Banerjee</h3>
+          <div class="dev-role">Lead Developer &amp; Project Creator</div>
+          <p class="dev-bio">
+            Passionate software engineer and open-source enthusiast crafting high-performance, modern audio experiences. Dedicated to building ethical, ad-free, and privacy-respecting software for people around the world.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/PB2204/Luna" target="_blank" class="social-btn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub (@PB2204)
+            </a>
+            <a href="https://www.linkedin.com/in/pabitra-banerjee" target="_blank" class="social-btn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://www.facebook.com/Comrade.Pabitra.Banerjee" target="_blank" class="social-btn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+              Facebook
+            </a>
+            <a href="https://github.com/sponsors/PB2204" target="_blank" class="social-btn">
+              ❤️ Sponsor
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        © 2026 <strong>Luna Music</strong>. Developed by <a href="https://github.com/PB2204" target="_blank">Pabitra Banerjee</a>. Released under the GPL-3.0 License.
+      </p>
+      <p style="margin-top: 8px; font-size: 0.85rem; color: #64748b;">
+        Luna Music is an independent open-source project and is not affiliated with Google or YouTube.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

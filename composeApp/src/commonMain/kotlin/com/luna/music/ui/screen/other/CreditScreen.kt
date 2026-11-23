@@ -108,14 +108,14 @@ fun CreditScreen(
             fontSize = 13.sp,
         )
 
-        // Developer - clickable, opens dev blog
+        // Developer - clickable, opens dev profile
         Text(
             text = stringResource(Res.string.maxrave_dev),
             style = typo().bodyMedium,
             textDecoration = TextDecoration.Underline,
             modifier =
                 Modifier.clickable {
-                    openUrl("https://luna-music.app")
+                    openUrl("https://github.com/PB2204/Luna")
                 },
         )
 
@@ -138,7 +138,7 @@ fun CreditScreen(
             // Website button
             TextButton(
                 onClick = {
-                    openUrl("https://luna-music.app")
+                    openUrl("https://luna-music-app.web.app")
                 },
                 modifier =
                     Modifier
@@ -149,30 +149,10 @@ fun CreditScreen(
                 Text(text = stringResource(Res.string.website))
             }
 
-            // Developer blog button
-            TextButton(
-                onClick = {
-                    openUrl("https://www.luna-music.app/blogs")
-                },
-                modifier =
-                    Modifier
-                        .align(Alignment.Start)
-                        .padding(horizontal = 25.dp)
-                        .defaultMinSize(minHeight = 1.dp, minWidth = 1.dp),
-            ) {
-                Column {
-                    Text(text = stringResource(Res.string.developer_blog))
-                    Text(
-                        text = stringResource(Res.string.developer_blog_tagline),
-                        style = typo().bodySmall,
-                    )
-                }
-            }
-
             // GitHub button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/luna-music/Luna")
+                    openUrl("https://github.com/PB2204/Luna")
                 },
                 modifier =
                     Modifier
@@ -183,10 +163,38 @@ fun CreditScreen(
                 Text(text = stringResource(Res.string.github))
             }
 
+            // LinkedIn button
+            TextButton(
+                onClick = {
+                    openUrl("https://www.linkedin.com/in/pabitra-banerjee")
+                },
+                modifier =
+                    Modifier
+                        .align(Alignment.Start)
+                        .padding(horizontal = 25.dp)
+                        .defaultMinSize(minHeight = 1.dp, minWidth = 1.dp),
+            ) {
+                Text(text = stringResource(Res.string.linkedin))
+            }
+
+            // Facebook button
+            TextButton(
+                onClick = {
+                    openUrl("https://www.facebook.com/Comrade.Pabitra.Banerjee")
+                },
+                modifier =
+                    Modifier
+                        .align(Alignment.Start)
+                        .padding(horizontal = 25.dp)
+                        .defaultMinSize(minHeight = 1.dp, minWidth = 1.dp),
+            ) {
+                Text(text = stringResource(Res.string.facebook))
+            }
+
             // Issue tracker button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/luna-music/Luna/issues")
+                    openUrl("https://github.com/PB2204/Luna/issues")
                 },
                 modifier =
                     Modifier
@@ -200,7 +208,7 @@ fun CreditScreen(
             // Buy me a coffee button
             TextButton(
                 onClick = {
-                    openUrl("https://github.com/sponsors/luna-music")
+                    openUrl("https://github.com/sponsors/PB2204")
                 },
                 modifier =
                     Modifier

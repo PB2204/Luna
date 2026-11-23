@@ -333,7 +333,7 @@
 
 -keep class com.luna.lyrics.parser.** { *; }
 -keep class com.luna.lyrics.models.** { *; }
--keep class org.luna.nowplayingcenter.** { *; }
+-keep class org.simpmusic.nowplayingcenter.** { *; }
 -keep class io.github.selemba1000.** { *; }
 -keep class com.luna.lyrics.parser.** { *; }
 

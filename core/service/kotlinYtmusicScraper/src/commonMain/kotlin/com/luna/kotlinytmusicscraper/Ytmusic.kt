@@ -725,7 +725,7 @@ class Ytmusic {
         }
 
     suspend fun checkForGithubReleaseUpdate() =
-        httpClient.get("https://api.github.com/repos/luna-music/Luna Music/releases/latest") {
+        httpClient.get("https://api.github.com/repos/PB2204/Luna/releases/latest") {
             contentType(ContentType.Application.Json)
         }
 

@@ -34,8 +34,8 @@ class DiscordRPC(
             smallText = song.artistName?.firstOrNull(),
             buttons =
                 listOf(
-                    "Listen on Luna Music" to "https://luna-music.app/app/watch?v=${song.videoId}",
-                    "Visit Luna Music" to "https://github.com/luna-music/Luna Music",
+                    "Listen on Luna Music" to "https://luna-music-app.web.app/app/watch?v=${song.videoId}",
+                    "Visit Luna Music" to "https://github.com/PB2204/Luna",
                 ),
             type = Type.LISTENING,
             since = currentTime,

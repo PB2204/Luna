@@ -1467,7 +1467,7 @@ class SharedViewModel(
             }
         }
 
-        val shouldSendLyricsToLuna Music =
+        val shouldSendLyricsToLuna =
             runBlocking {
                 dataStoreManager.helpBuildLyricsDatabase.first() == TRUE
             } &&
@@ -1492,7 +1492,7 @@ class SharedViewModel(
                                 ),
                         )
                     }
-                    if (shouldSendLyricsToLuna Music && track != null) {
+                    if (shouldSendLyricsToLuna && track != null) {
                         viewModelScope.launch {
                             lyricsCanvasRepository
                                 .insertLunaTranslatedLyrics(
@@ -1544,7 +1544,7 @@ class SharedViewModel(
                             ),
                         )
                     }
-                    if (shouldSendLyricsToLuna Music && track != null) {
+                    if (shouldSendLyricsToLuna && track != null) {
                         viewModelScope.launch {
                             lyricsCanvasRepository
                                 .insertLunaLyrics(

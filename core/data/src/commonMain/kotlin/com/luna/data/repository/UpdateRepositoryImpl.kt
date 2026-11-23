@@ -45,7 +45,7 @@ internal class UpdateRepositoryImpl(
                                 body =
                                     $$"""
                                     ### Update via F-Droid, changelogs: 
-                                    - https://github.com/luna-music/Luna Music/blob/dev/fastlane/metadata/android/en-US/changelogs/$${latestVersion.versionCode}.txt
+                                    - https://github.com/PB2204/Luna/blob/main/fastlane/metadata/android/en-US/changelogs/$${latestVersion.versionCode}.txt
                                     """.trimIndent(),
                             ),
                         ),

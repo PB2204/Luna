@@ -68,8 +68,8 @@ class DiscordRpc(
         val endTime = now + ((durationMillis - currentPlaybackTimeMillis) / playbackSpeed).toLong()
         val buttons =
             listOf(
-                "Listen on Luna Music" to "https://luna-music.app/app/watch?v=${song.videoId}",
-                "Visit Luna Music" to "https://github.com/luna-music/Luna Music",
+                "Listen on Luna Music" to "https://luna-music-app.web.app/app/watch?v=${song.videoId}",
+                "Visit Luna Music" to "https://github.com/PB2204/Luna",
             )
         gateway.sendPresence(
             Presence(
