@@ -3,6 +3,8 @@ package com.luna.media3.service
 import android.app.Activity
 import android.app.ActivityManager
 import android.app.ActivityManager.RunningAppProcessInfo
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.ComponentName
 import android.content.Context
@@ -75,6 +77,26 @@ internal class SimpleMediaService :
     override fun onCreate() {
         super.onCreate()
         Logger.w("Service", "Simple Media Service Created")
+
+        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        try {
+            notificationManager.deleteNotificationChannel("Luna Music Playback Notification ID")
+        } catch (_: Exception) {}
+
+        if (notificationManager.getNotificationChannel(MEDIA_NOTIFICATION.NOTIFICATION_CHANNEL_ID) == null) {
+            val channel = NotificationChannel(
+                MEDIA_NOTIFICATION.NOTIFICATION_CHANNEL_ID,
+                getString(R.string.notification_channel_name),
+                NotificationManager.IMPORTANCE_DEFAULT,
+            ).apply {
+                description = "Luna Music Playback Status"
+                setSound(null, null)
+                enableVibration(false)
+                setShowBadge(true)
+                lockscreenVisibility = android.app.Notification.VISIBILITY_PUBLIC
+            }
+            notificationManager.createNotificationChannel(channel)
+        }
 
         setMediaNotificationProvider(
             DefaultMediaNotificationProvider(

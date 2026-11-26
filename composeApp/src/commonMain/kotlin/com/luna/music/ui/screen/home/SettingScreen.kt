@@ -2866,9 +2866,9 @@ fun SettingScreen(
                 )
                 SettingItem(
                     title = stringResource(Res.string.website),
-                    subtitle = "luna-music-app.web.app",
+                    subtitle = "studio-9200963789-6820f.web.app",
                     onClick = {
-                        uriHandler.openUri("https://luna-music-app.web.app")
+                        uriHandler.openUri("https://studio-9200963789-6820f.web.app")
                     },
                 )
                 SettingItem(

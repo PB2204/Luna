@@ -138,7 +138,7 @@ fun CreditScreen(
             // Website button
             TextButton(
                 onClick = {
-                    openUrl("https://luna-music-app.web.app")
+                    openUrl("https://studio-9200963789-6820f.web.app")
                 },
                 modifier =
                     Modifier

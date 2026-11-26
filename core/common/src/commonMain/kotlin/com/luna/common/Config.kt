@@ -649,8 +649,8 @@ object MEDIA_CUSTOM_COMMAND {
 
 object MEDIA_NOTIFICATION {
     const val NOTIFICATION_ID = 200
-    const val NOTIFICATION_CHANNEL_NAME = "Luna Music Playback Notification"
-    const val NOTIFICATION_CHANNEL_ID = "Luna Music Playback Notification ID"
+    const val NOTIFICATION_CHANNEL_NAME = "Luna Music Playback"
+    const val NOTIFICATION_CHANNEL_ID = "luna_playback_status_channel_v3"
 }
 
 const val SETTINGS_FILENAME = "settings"

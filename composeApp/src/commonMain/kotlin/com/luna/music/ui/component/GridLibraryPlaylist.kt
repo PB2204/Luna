@@ -316,7 +316,7 @@ internal inline fun <reified T> GridLibraryPlaylist(
                                     vertical = 16.dp,
                                 ),
                             onClick = {
-                                uriHandler.openUri("https://luna-music-app.web.app/#charts")
+                                uriHandler.openUri("https://studio-9200963789-6820f.web.app/#charts")
                             },
                         )
                     }
