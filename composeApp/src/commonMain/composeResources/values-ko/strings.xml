@@ -121,7 +121,7 @@
     <string name="about_us">정보</string>
     <string name="version">버전</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pabitra Banerjee</string>
+    <string name="maxrave_dev">Pabitra Banerjee || MB WEBBER'S</string>
     <string name="buy_me_a_coffee">Buy me a coffee</string>
     <string name="developer_blog">개발자 블로그</string>
     <string name="developer_blog_tagline">개발 노트, 튜토리얼 &amp; 비하인드 스토리를 읽어보세요</string>
@@ -578,7 +578,7 @@
     <string name="local_tracking_description">로컬 데이터베이스에 나의 재생 기록 저장</string>
     <string name="blog_notification_title">블로그 포스트 알림</string>
     <string name="blog_notification_description">새로운 블로그가 올라오면 알림 받기</string>
-    <string name="luna_charts">Simpmusic 차트</string>
+    <string name="luna_charts">Luna Music 차트</string>
     <string name="crossfading">크로스페이드 중</string>
     <string name="your_320kbps_url">320kbps URL</string>
     <string name="your_320kbps_url_description">가동 시간 검사기에서 작동하는 URL을 자동으로 선택하려면 비워 두세요.</string>

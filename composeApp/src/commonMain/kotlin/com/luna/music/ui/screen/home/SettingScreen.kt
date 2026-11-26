@@ -2627,18 +2627,18 @@ fun SettingScreen(
             SettingGroup(
                 title = stringResource(Res.string.backup),
                 footer = {
-                    val beforeUrl = stringResource(Res.string.import_data_intro).substringBefore("https://www.luna-music.app/tools")
-                    val afterUrl = stringResource(Res.string.import_data_intro).substringAfter("https://www.luna-music.app/tools")
+                    val beforeUrl = stringResource(Res.string.import_data_intro).substringBefore("https://luna-music-app.web.app/tools")
+                    val afterUrl = stringResource(Res.string.import_data_intro).substringAfter("https://luna-music-app.web.app/tools")
                     Text(
                         buildAnnotatedString {
                             append(beforeUrl)
                             withLink(
                                 LinkAnnotation.Url(
-                                    "https://www.luna-music.app/tools",
+                                    "https://luna-music-app.web.app/tools",
                                     TextLinkStyles(style = SpanStyle(color = MaterialTheme.colorScheme.primary)),
                                 ),
                             ) {
-                                append("https://www.luna-music.app/tools")
+                                append("https://luna-music-app.web.app/tools")
                             }
                             append(afterUrl)
                         },

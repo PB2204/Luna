@@ -1,15 +1,39 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Luna Crescent Moon -->
+    <!-- Luna Crescent Moon with vibrant gradient -->
     <path
-        android:fillColor="#8BE9FD"
         android:fillType="evenOdd"
-        android:pathData="M 50,22 C 32.33,22 18,36.33 18,54 C 18,71.67 32.33,86 50,86 C 58.2,86 65.7,82.9 71.4,77.8 C 55,76 42,62 42,45 C 42,34.2 47.7,24.8 56.2,22.6 C 54.2,22.2 52.1,22 50,22 Z" />
-    <!-- Luna Music Note -->
+        android:pathData="M 50,22 C 32.33,22 18,36.33 18,54 C 18,71.67 32.33,86 50,86 C 58.2,86 65.7,82.9 71.4,77.8 C 55,76 42,62 42,45 C 42,34.2 47.7,24.8 56.2,22.6 C 54.2,22.2 52.1,22 50,22 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#FF4500"
+                android:centerColor="#D946EF"
+                android:endColor="#00F0FF"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Luna Music Note with luminous gold-to-cyan gradient -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M 64,36 L 64,65 C 62.2,63.8 59.7,63 57,63 C 51.5,63 47,66.6 47,71 C 47,75.4 51.5,79 57,79 C 62.5,79 67,75.4 67,71 L 67,46 L 82,42 L 82,32 Z" />
+        android:pathData="M 64,36 L 64,65 C 62.2,63.8 59.7,63 57,63 C 51.5,63 47,66.6 47,71 C 47,75.4 51.5,79 57,79 C 62.5,79 67,75.4 67,71 L 67,46 L 82,42 L 82,32 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="270"
+                android:startColor="#FEF08A"
+                android:endColor="#38BDF8"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Golden Sparkle Star -->
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M 76,26 L 77,29 L 80,30 L 77,31 L 76,34 L 75,31 L 72,30 L 75,29 Z" />
+    <!-- Cyan Sparkle Star -->
+    <path
+        android:fillColor="#67E8F9"
+        android:pathData="M 28,68 L 29,70 L 31,71 L 29,72 L 28,74 L 27,72 L 25,71 L 27,70 Z" />
 </vector>

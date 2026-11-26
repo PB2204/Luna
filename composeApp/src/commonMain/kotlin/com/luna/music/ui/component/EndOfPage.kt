@@ -34,7 +34,7 @@ fun EndOfPage(withoutCredit: Boolean = false) {
                     stringResource(
                         Res.string.version_format,
                         VersionManager.getVersionName(),
-                    ) + "\nluna-music",
+                    ) + "\nPabitra Banerjee || MB WEBBER'S",
                 style = typo().bodySmall,
                 textAlign = TextAlign.Center,
                 modifier =
