@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Luna" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/luna_cold_start_background</item>
+        <item name="android:windowSplashScreenBackground">@color/luna_cold_start_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/luna_cold_start_background</item>
+    </style>
+</resources>

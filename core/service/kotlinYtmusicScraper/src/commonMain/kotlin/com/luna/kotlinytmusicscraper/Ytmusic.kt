@@ -460,7 +460,7 @@ class Ytmusic {
 
     suspend fun getLunaChart() =
         try {
-            httpClient.get("https://chart.luna-music.app/api/playlists") {
+            httpClient.get("https://luna-music-app.web.app/api/playlists.json") {
                 accept(ContentType.Application.Json)
                 contentType(ContentType.Application.Json)
             }

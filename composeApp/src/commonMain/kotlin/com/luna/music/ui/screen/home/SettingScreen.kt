@@ -2859,7 +2859,7 @@ fun SettingScreen(
                 )
                 SettingItem(
                     title = stringResource(Res.string.facebook),
-                    subtitle = "Comrade Pabitra Banerjee",
+                    subtitle = "Pabitra Banerjee",
                     onClick = {
                         uriHandler.openUri("https://www.facebook.com/Comrade.Pabitra.Banerjee")
                     },

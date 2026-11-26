@@ -695,7 +695,7 @@ fun SearchScreen(
                                     LunaChartButton(
                                         modifier = Modifier.padding(top = 10.dp),
                                     ) {
-                                        uriHandler.openUri("https://chart.luna-music.app")
+                                        uriHandler.openUri("https://luna-music-app.web.app/#charts")
                                     }
                                 }
                             }
