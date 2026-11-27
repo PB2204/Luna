@@ -52,3 +52,5 @@ sentry.properties
 /desktopApp/generated.conveyor.conf
 /output/
 .firebase/
+
+/release/
